@@ -772,115 +772,6 @@
             color: var(--light-gray);
         }
 
-        /* Portfolio Section */
-        .portfolio {
-            background: var(--dark);
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            width: 100%;
-        }
-
-        .rn-portfolio {
-            background: var(--dark-gray);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            width: 100%;
-        }
-
-        .rn-portfolio:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .rn-portfolio .thumbnail {
-            border-radius: 0;
-            box-shadow: none;
-            width: 100%;
-        }
-
-        .rn-portfolio .thumbnail img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .rn-portfolio:hover .thumbnail img {
-            transform: scale(1.05);
-        }
-
-        .rn-portfolio .content {
-            padding: 25px;
-        }
-
-        .rn-portfolio .category-list {
-            margin-bottom: 10px;
-        }
-
-        .rn-portfolio .category-list a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-        }
-
-        .rn-portfolio h4 {
-            font-size: 20px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .rn-portfolio h4 a {
-            color: var(--white);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .rn-portfolio h4 a:hover {
-            color: var(--primary);
-        }
-
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .tech-stack span {
-            background: var(--dark);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            color: var(--light-gray);
-        }
-
-        .more-projects {
-            display: inline-block;
-            margin-top: 40px;
-            background: var(--primary);
-            color: var(--white);
-            padding: 12px 28px;
-            border-radius: 30px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(56, 149, 131, 0.3);
-        }
-
-        .more-projects:hover {
-            background: var(--primary-light);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(56, 149, 131, 0.4);
-        }
-
         /* Publications Section */
         .publications {
             background: var(--dark-gray);
@@ -1103,7 +994,6 @@
             }
             
             .services-grid,
-            .portfolio-grid,
             .publications-grid {
                 grid-template-columns: 1fr;
             }
@@ -1126,10 +1016,6 @@
 
             .hero-stats h3 {
                 font-size: 2rem;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
             }
 
             .header-wrapper {
@@ -1200,11 +1086,6 @@
                 gap: 10px;
             }
 
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
             .services-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
@@ -1239,14 +1120,6 @@
             
             .section-title .title {
                 font-size: 24px;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .rn-portfolio .thumbnail img {
-                height: 200px;
             }
 
             .hero-stats h3 {
@@ -1312,7 +1185,6 @@
                     <li><a href="#home" class="is-active">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -1348,7 +1220,6 @@
             <a href="#home" class="is-active"><i class="fas fa-home"></i> Home</a>
             <a href="#services"><i class="fas fa-cogs"></i> Services</a>
             <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-            <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
             <a href="#publications"><i class="fas fa-newspaper"></i> Publications</a>
             <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
         </nav>
@@ -1374,7 +1245,6 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="#contact" class="rn-btn primary">Contact Now</a>
-                    <a href="#portfolio" class="rn-btn secondary">View Portfolio</a>
                 </div>
                 <div class="social-share-inner-left">
                     <span class="title">Find me here</span>
@@ -1514,73 +1384,6 @@
 					<div class="percentage">Completion year: 2013</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="section portfolio" id="portfolio">
-        <div class="section-title">
-            <span class="subtitle">Visit my portfolio and know about my projects</span>
-            <h2 class="title">My Portfolio</h2>
-        </div>
-        <div class="portfolio-grid">
-            <div class="rn-portfolio fade-in">
-                <div class="thumbnail">
-                    <img src="cosmos.png" alt="Residential Complex Design">
-                </div>
-                <div class="content">
-                    <div class="category-list">
-                        <a href="#">Building Design</a>
-                    </div>
-                    <h4><a href="#">Cosmos College</a></h4>
-                    <p>Complete structural design of nine storey college building for Cosmos college at Balaju, Kathmandu.</p>
-                    <div class="tech-stack">
-                        <span>ETABS</span>
-						<span>SAFE</span>
-                        <span>Geo5</span>
-                        <span>AutoCAD</span>
-                    </div>
-                </div>
-            </div>
-            <div class="rn-portfolio fade-in">
-                <div class="thumbnail">
-                    <img src="baneshowr.png" alt="Commercial Building Structure">
-                </div>
-                <div class="content">
-                    <div class="category-list">
-                        <a href="#">Structural Analysis</a>
-                    </div>
-                    <h4><a href="#">Baneshowr Complex</a></h4>
-                    <p>Complete structural analysis, and design of eight storey commercial complex located in Baneshowr, Kathmandu. The project also features deep soil retaining structures including protection pile, sheet pile and anchorage systems.</p>
-                    <div class="tech-stack">
-                        <span>ETABS</span>
-                        <span>SAFE</span>
-						<span>Geo5</span>
-                        <span>AutoCAD</span>
-                    </div>
-                </div>
-            </div>
-            <div class="rn-portfolio fade-in">
-                <div class="thumbnail">
-                    <img src="baglung.png" alt="Bridge Construction">
-                </div>
-                <div class="content">
-                    <div class="category-list">
-                        <a href="#">Building design</a>
-                    </div>
-                    <h4><a href="#">Baglung Hotel</a></h4>
-                    <p>Structural analysis, design and estimation of nine storey hotel purposed in Baglung, Nepal</p>
-                    <div class="tech-stack">
-                        <span>ETABS</span>
-                        <span>SAFE</span>
-						<span>AutoCAD</span>
-                        <span>MS Office</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center;">
-            <a href="more-projects.html" class="more-projects">More Projects →</a>
         </div>
     </section>
 
